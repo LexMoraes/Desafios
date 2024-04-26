@@ -1,5 +1,5 @@
 def qtde_leds(num):
-    # Lista com a quantidade de leds para cada número digitado
+    # Lista dicionario com a quantidade de leds(valor) para cada número informado(chave)
     led_count = {
         '1': 2,  # Um led para o segmento superior e outro para o inferior
         '2': 5,  # Cinco leds: dois superiores, dois inferiores e um central
