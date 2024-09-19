@@ -1,6 +1,7 @@
+from dbm import error
+
 from actions import FibonacciActions, QuestionThree, QuestionFour, QuestionTwo
 
-# Módulo para trabalhar as exibições na tela.
 
 class MenuView:
     def __init__(self):
@@ -24,8 +25,9 @@ class MenuView:
                     print('Esse é o programa da questão 1 em funcionamento!')
                     print('Esta parte do programa deduz se o número informado faz parte da sequência de Fibonacci!')
                     print('Insira um número para verificar a existência na sequência de Fibonacci!')
-                    num = int(input('Insira aqui: '))
+                    num = input('Insira aqui: ')
                     question_one = FibonacciActions(num=num)
+                    question_one.validade_num()
                     question_one.check_fibonacci()
                     print('')
                     self.show_menu()

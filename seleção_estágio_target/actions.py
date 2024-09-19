@@ -10,6 +10,19 @@ class FibonacciActions:
         self.fib_sequence = [0, 1]
         self.num = num
 
+    def validade_num(self):
+        while True:
+            try:
+                self.num = int(self.num)
+                break
+            except ValueError:
+                print("O valor informado não é um número inteiro.")
+                num = input("Insira o valor novamente aqui: ")
+                self.num = num
+                self.validade_num()
+            return
+        return self.num
+
     def fibonacci(self, num):
         while self.fib_sequence[-1] < num:
             self.fib_sequence.append(self.fib_sequence[-1] + self.fib_sequence[-2])
@@ -22,7 +35,6 @@ class FibonacciActions:
             print("Sequência até o número informado:", self.fib_sequence)
         else:
             print(f"O número {self.num} não existe na sequência de Fibonacci.")
-
 
 class QuestionTwo:
     def __init__(self, input_string):
