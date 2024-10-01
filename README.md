@@ -1,5 +1,5 @@
 ##
-Este repositório armazena os desafios para seleções de estágios durante minha jornada rumo ao primeiro trabalho na área de desenvolvimento.
+Este repositório armazena os desafios para seleções de estágios durante minha jornada rumo ao primeiro emprego na área de desenvolvimento.
 ##
 
 ###
